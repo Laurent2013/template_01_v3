@@ -1,0 +1,44 @@
+.side-drawer {
+    height: 100%; /* wenn ich Prozent verwenden will müssen auch alle übergeordneten Elemente Prozent verwenden*/
+    background: rgb(204,204,204);
+    background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(153,153,153,0.29735644257703087) 100%);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(-100%); /* im geschlossenen Zustand */
+    transition: transform 0.5s ease-out;
+    /* transition für transform in 0,5 Sekunden, Startet schnell und endet langsam */
+}
+
+.side-drawer.open {
+    transform: translateX(0);        /* im geöffneten Zustand */
+}
+
+.side-drawer a {             /* dieses Styling muss in der Toolbar gesondert angegeben werden für die Links */
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: #0e6da7;
+}
+
+
+.side-drawer ul {
+    height: 100%;             /* wenn ich Prozent verwenden will müssen auch alle übergeordneten Elemente Prozent verwenden*/
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        /* ausrichtung der Elemente in der Senkrechten */
+
+}
+
+.side-drawer li {
+    margin: 0.5rem 0;
+}

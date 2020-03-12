@@ -1,0 +1,14 @@
+
+Bereits eingebaut {
+
+					Responsive
+					Toolbar
+					Menü
+
+					React-Rauter 
+				}
+
+
+======================   Kommentar:   =========================
+
+           Menü schließt nicht von selbst!!

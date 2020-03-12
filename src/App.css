@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+html {
+    /*background-color: #cccccc;
+    background-position: center 10%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;*/
+    animation: color 50s ease infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes color {
+    0% {
+        background: #a9a8ff;
+    }
+    5% {
+        background: #b4b2f5;
+    }
+    10% {
+        background: #bfbceb;
+    }
+    15% {
+        background: #c8c6e1;
+    }
+    20% {
+        background: #d0d0d7;
+    }
+    25% {
+        background: #dee5c2;
+    }
+    30% {
+        background: #cfd6b4;
+    }
+    35% {
+        background: #c1c8a6;
+    }
+    40% {
+        background: #b2b998;
+    }
+    45% {
+        background: #c1c8a6;
+    }
+    50% {
+        background: #cfd6b4;
+    }
+    55% {
+        background: #dee5c2;
+    }
+    60% {
+        background: #dee5c2;
+    }
+    65% {
+        background: #d9dbcd;
+    }
+    70% {
+        background: #d3d0d7;
+    }
+    75% {
+        background: #cdc6e1;
+    }
+    80% {
+        background: #c6bceb;
+    }
+    85% {
+        background: #beb2f5;
+    }
+    90% {
+        background: #b5a8ff;
+    }
+    100% {
+        background: #a9a8ff;
+    }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .App {
+        height: 100%;
+        color: white;
+    }
+
+
+    .section {
+        background: rgba(0, 0, 0, 0.6);
+        border: 5px outset #999999;
+        border-radius: 20px;
+        width: 80%;
+        margin: 2px auto;
+        padding: 1em;
+        text-align: center;
+        max-width: 500px;
+    }

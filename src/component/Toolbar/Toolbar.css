@@ -1,0 +1,71 @@
+
+
+.toolbar {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background: rgb(142,140,140);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(217,214,214,0.001) 100%);
+    height: 56px;
+    z-index: 99;
+}
+
+
+
+.toolbar_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar_navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.toolbar_navigation-items ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.toolbar_navigation-items li {
+    padding: 0 0.5rem;
+    margin: 0;
+}
+
+.toolbar_navigation-items a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active {
+    color: #0e6da7;
+}
+
+/* wenn der Bildschirm kleiner ist als 768 dann zeige die Links nicht! */
+@media (max-width: 768px) {
+    .toolbar_navigation-items {
+        display: none;
+    }
+}
+
+/* wenn der Bildschirm größer ist als 768 dann zeige den Button nicht! */
+@media (min-width: 768px) {
+    .toggleButton {
+        display: none;
+    }
+}
